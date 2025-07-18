@@ -7,6 +7,7 @@ pipeline {
         stage('Execute') {
             steps {
                         sh '''
+                            cd java-test-code
                             javac HelloWorld.java
                             java HelloWorld
                         '''
